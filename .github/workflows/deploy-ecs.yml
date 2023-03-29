@@ -8,7 +8,7 @@ jobs:
             commit: ${{ github.sha }}
             name-repository: test-ecs-demo
             name-service: hello-world-service
-            name-cluste: example-cluster
+            name-cluster: example-cluster
             aws-region-d: ${{ vars.AWS_REGION }}
            secrets:
                aws-access-key-id-d: ${{ secrets.AWS_ACCESS_KEY_ID }}
