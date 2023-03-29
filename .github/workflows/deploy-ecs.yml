@@ -16,7 +16,7 @@ jobs:
              aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
              aws-region: ${{ vars.AWS_REGION }} 
 
-         - name: 
+         - name: deploy test
            uses: joaov-barbosa/ecr-deploy-demo/.github/workflows/ecs.yml@master
            with:
             commit: ${{ github.sha }}
